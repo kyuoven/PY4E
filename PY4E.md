@@ -105,3 +105,48 @@ print(pay)
 ````
 ==Python really doesn't care what you name it, as long as it is clear to you!==
 
+==Assignment statements==
+- We assign a value to a variable using the assisgment stamente (= sign)
+- An assignment statment consists of an expression on the right hand side and a variable to store the result.
+
+==Expressions==
+- Operators (include  +, - , asterix, /, etc.)
+- Numeric expressions:
+	- Basic math in Python
+- Order of Evaluation:
+	- "Operator Precedence" = Which operator goes first?
+	- 1st = Parenthesis
+	- 2nd = Power
+	- 3rd = Multiplication
+	- 4th = Addition
+	- 5th = Left to Right
+
+==What does "Type" mean?==
+Python knows the difference between an integer number and a string.
+"+" means addition, and "concatenate" means a string.
+You cannot add int to a string!
+
+==function type()==  = Hey tell me what type this variable is please !
+
+````
+```python
+>>> xx = 1
+>>> type(xx)
+<class 'int'>
+
+>>> abc = hello!
+>>> type(abc)
+<class 'str'>
+````
+
+Integer Division will always end up in a floating point number. (In Python 3.0 and up!)
+````
+```python
+>>> print(10/2)
+5.0
+>>> print(99.0/100.0)
+0.99
+````
+
+==String conversions== only work with strings made out of numbers ('123')
+function variable = int(str)
