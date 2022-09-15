@@ -150,3 +150,18 @@ Integer Division will always end up in a floating point number. (In Python 3.0 a
 
 ==String conversions== only work with strings made out of numbers ('123')
 function variable = int(str)
+
+Comments in Python can be done with a # sign (pound sign)
+> It's very important to put comments to make it easier for others/yourself to understand your code!! 
+
+Now here is a little ==Summary==:
+- Type
+- Reserved Words
+- Variables (mnemonic)
+- Operators
+- Operator precedence
+- Integer Divisoin
+- Conversion between types
+- User input
+- Comments (#)
+- Printing
