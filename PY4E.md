@@ -284,3 +284,148 @@ print(">")
 
 ^ That's my first self-written program since starting this! :)  I went a bit wild with it 
 
+**Chapter Four: Functions**
+
+def() = define function command
+example:
+````python
+def thing():
+print("Hello!")
+print("This is my function!")
+
+thing()
+thing()
+
+````
+
+max() = prints the smallest character used.
+
+_2022_09_25_
+
+min() = prints the smallest character used.
+Python functions: all built in - print(), input(), float(), etc.
+
+ Application Protocol: What are we going to solve? Who talks first?
+	- HTTP: hyperText Transfer Protocol, retrieving HTML, images, docs, etc.
+		- GET request - response
+		- POST request
+		- Internet standards: www.ietf.org
+	- Protocol: Set of rules so things don't bump into eachother.
+
+*Chapter 12: Network Programming*
+
+==An HTTP Request in Python==
+
+````
+python
+
+import socket
+
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data/pr4e.org', 80))
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\n\n' .encode()
+mysock.send(cmd)
+
+while True:
+	data = mysock.recv(521)
+	if (len(data)>1):
+		break
+	print(data.decode())
+mysock.close()
+
+````
+
+_2022-09-26_
+
+urlib in Python: using http is super common, so we have a library that does all the socket work for us and makes the web page look like a file!
+
+==Reading data from a website==
+````
+python
+
+import urllib.request, urllib.parse, urllib.error
+# remember this from your final project from LPTHW? :)
+
+fhan = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+for line in fhand:
+	print(line.decode().strip())
+
+````
+
+==Like a file==
+````
+python
+
+import urllib.request, urllib.parse, urllib.error
+
+fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+
+counts = dict()
+for line in fhand:
+	words = line.decode().split()
+	for word in words = 
+		counts[word] = counts.get(word, 0) +1
+print(counts)
+
+````
+==Parsing HTML (aka Web Scraping)==
+
+What is web scraping?
+	- retrieving a webpage
+	- extracting the contents of a webpage
+	- looks at more web pages
+
+Why scrape?
+	- To search for data - social data
+	- Monitor a site for new information
+	- If you want to make a search engine
+
+The web is full of broken HTML
+
+Summary
+	- The TCP/IP gives us pipes or sockets between applications
+	- We designed application protocols to make us one of these pipes
+	- HTTP is a simple yet powerful protocol
+	- Python has a good support for sockets, HTTP and HTML parsing
+	
+
+**Chapter 13: Web services**
+
+==Data on the web==
+	- With the HTTP Request/Response welll understood and well supported, there was a natural move toward exchanging data between programs using these protocols
+	- We needed to com up with an agreed way to represent data going between applications and across networks
+	- There are two commonly used formats: XML and JSON
+
+	Sending data across the "Net" -> Wire Protocol (What we send on the "wire")
+		- from Python Dictionary
+		- Serialize
+		- De-Serialize
+		- to Java HASHMap/JSON
+	
+==XML Basics==, Marking up data to send across the network
+
+	XML stands for 'eXtensible Markup Language'
+		- Primary purpose to help information systems share structured data
+		- It's designed to be relitavely human-legible
+
+	XML terminology
+		- Tags
+		- Attributes
+		- Serialize / De-serialize
+
+			- Start tag						<person>
+			- End tag							<name>Chuck</name>
+			- Test Content						<phone type="intl">
+												+17343034456
+			-Attribute							</phone>
+												<email hide="yes"/>
+			-Self closing tag				</person>
+	
+	XML Elements / Nodes
+		- Simple element = A tag and some data
+		- Complex element = A tag that includes other tags (some child tags)
+
+	
+
+
+
