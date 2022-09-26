@@ -425,7 +425,25 @@ Summary
 		- Simple element = A tag and some data
 		- Complex element = A tag that includes other tags (some child tags)
 
-	
+==XML Schema==
+	- Description of the legal format of an XML document
+	- XML Document + XML Schema Contract  -> Validator (XML Validation)
+
+=XSD XML Schema=
+	- xs:element		
+	- xs:sequence
+	- xs:complex Type
+
+=ISO 8601 Date/Time Format=
+2002-05-30T09:30:10Z
+- Year-Month-Day
+- Time
+- Timezone
+
+==JSON (JavaScript Object Notation)==
+JSON representds dta as nested lists and dictionaries (Check out the 13_json1.py file!)
+
+
 
 
 
