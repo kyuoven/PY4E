@@ -443,6 +443,26 @@ Summary
 ==JSON (JavaScript Object Notation)==
 JSON representds dta as nested lists and dictionaries (Check out the 13_json1.py file!)
 
+_2022-09-26_
+
+==SOA - Service Oriented Progamming==
+Uses services from other applications for things like: 
+	- Credit card charge
+	- Hotel reservations
+
+Initially- Two systems cooperate and split the problem
+As the data and service becomes useful- mutiple applications want to use the information or application.
+
+SOA has evolved into a system wide arhitecture.
+
+==GeoJSON==
+
+Application Program Interface, API
+-> A way for computer programs to interact with eachother, offering a service to other software
+
+URL encoding
+if you enter a specific url you will get a json file
+
 
 
 
