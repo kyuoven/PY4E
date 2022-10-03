@@ -502,6 +502,35 @@ while True:
 ==URL encoding==
 if you enter a specific url you will get a json file
 
+_2022-10-03_
+
+==Object-Oriented Programming==
+
+- Terminology
+	- methods
+	- method signatures
+	- inheritance
+	- etc.
+
+- Object (oriented)
+	- The program is made up of many cooperating objects
+	- An object is a bit of self contained code and data
+	- Think of dictionaries, lists, strings, etc.
+	- We have been using objects all along
+
+- Definitions
+	- class 				Dog			Cookie cutter	
+	- method				bark()		cut_cookies()	-> function that lives inside of a class
+	- field/attribute		length		size			-> data items inside of a class
+	- object/instance		Lassie		Edible Cookie	-> the creation/instance of an object
+
+# i wrote a little program called AnimalBandClasses.py! loulou/git/PY4E/Exercises/AnimalBandClasses.py
+
+==Data structures in Python==
+
+
+	
+
 
 
 
