@@ -580,6 +580,51 @@ class FootballFan(PartyAnimal): # this class inherits everything from PartyAnima
 ==More definitions==
 Constructor
 	- Code that runs when an object is created
-	
+
 Inheritance
 	- The ability to extend a class to make a new class
+
+==Databases==
+
+SQL is a new programming language.
+
+databases are the science of how you use random data and how you update it etc
+-> led to the study of relational databases 
+
+==Terminology==
+Database:
+	- Contains many tables
+Relation (or table):
+	- Contains tuples and attributes
+Tuple (or row)"
+	- A set of fields that generally represents an object like a person or a music track.
+Attribute:
+	- One of possibly many elements of data corresponding to the object represented by the row.
+
+SQL = Structured Query Language is the language we use to issue commands to the database 
+	- Create a table
+	- Retrieve some data
+	- Insert data
+	- Delete data
+
+==Web applications with Databases==
+	- Application Developer:
+		Builds the logic for the application. the look and the feel - monitors thge application for problems.
+	- Database Administrator:
+		Monitors and adjusts the databse as the propgram runs in production
+
+Database Model = the structure or format of a database.
+
+Common Database Systems:
+	- Oracle
+	- MySql
+	- SqlServer
+	- Postgres
+
+
+	  
+
+
+
+
+
