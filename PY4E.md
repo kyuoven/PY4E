@@ -528,10 +528,58 @@ _2022-10-03_
 
 ==Data structures in Python==
 
+_2022-10-14_
 
+Python
+
+class PartyAnimal:
+	x = 0
+
+	def party(self):
+		self.x = self.x + 1
+		print("Now we have,"self.x)
+
+an = PartyAnimal()
+
+an.party() # = PartyAnimal.party(an)
+an.party()
+an.party()
+
+end Python
+
+What this would give us:
+Now we have 1 
+Now we have 2 
+Now we have 3
+ 
+The dir() command lists the capabilities
+It is like type() - it tells us something about a variable!
+
+==Object lifecycle==
+
+Ovjects are created, used and then discarded.
+We have special blocks of code (methods) that get called:
+	- at the moment of creation / constructor
+	- at the moment of destruction / desctructor
+
+Constructor :
+- The primary purpose of the constructor is to set uop some instance variables it have proper initial values when the object is created.
+- example: __init__
+
+==Inheritance==
+
+- Another form of store and reuse
+
+
+class PartyAnimal:
+	code 
+
+class FootballFan(PartyAnimal): # this class inherits everything from PartyAnimal
+	inherited code + code
+
+==More definitions==
+Constructor
+	- Code that runs when an object is created
 	
-
-
-
-
-
+Inheritance
+	- The ability to extend a class to make a new class
