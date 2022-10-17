@@ -621,6 +621,51 @@ Common Database Systems:
 	- SqlServer
 	- Postgres
 
+_2022-10-17_
+
+C - Create
+R - Read
+U - Update
+D - Delete
+
+==SQL:insert==
+INSERT INTO Users (name, email) VALUES ('Kristin', 'kfm@gmail.com)'
+This insert statement inserts a row inro a table.
+
+==SQL:Delete==
+DELETE FROM Users WHERE email='ted@umich.edu'
+This deletes a row in a table based on a selection criteria.
+
+==SQL:Update==
+UPDATE Users SET name='Chuck' WHERE email='csev@umich.edu'
+This allows the updating of a field with a where clause.
+
+==Retrieving Records:Select==
+SELECT * FROM Users
+SELECT * FROM Users WHERE email='csev@umich.edu'
+
+==Sorting with ORDER BY==
+SELECT * FROM Users ORDER BY email
+SELECT * FROM Users ORDER BY name DESC
+You can add an ORDER BY clause to SELECT statementrs to get the result in ascending or descending order.
+
+==SQL Summary==
+INSERT INTO Users (name,email) VALUES ('Kristin','kf@umich.edu')
+DELETE FROM Users WHERE email='ted@umich.edu'
+UPDATE Users SET name="Charles" WHERE email='csev@umich.edu'
+SELECT * FROM Users
+SELECT * FROM Users WHERE email='csev@umich.edu'
+SELECT * FROM Users ORDER BY email
+
+remember CRUD!
+
+
+==Complex Data Models and Relationships==
+
+
+
+
+
 
 	  
 
