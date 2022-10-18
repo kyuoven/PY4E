@@ -659,8 +659,30 @@ SELECT * FROM Users ORDER BY email
 
 remember CRUD!
 
-
 ==Complex Data Models and Relationships==
+
+_2022-10-18_
+
+Our goal is to avoid really bad mistakes and design clean and easily understood databases.
+
+To build a data model:
+	- Draw out a picture of the data objects for our application to figure out how to represent the objects and their relationships.
+	- Don't put the same string data in twice - use a relationship instead!
+	- make a copy!
+
+For each piece of info...
+	- is the column an object or an attribute of another object?
+	- once we define objects, we need to define the relationships between objects.
+
+==Representing relationships in databases==
+
+	Database Normalization:
+		- Do not replicate data
+		- Use integers for keys and references
+	
+	Integer reference pattern:
+		-
+
 
 
 
