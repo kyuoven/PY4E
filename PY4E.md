@@ -733,8 +733,13 @@ Key = A field or a combination of fields in a database table used to retrieve an
 	Relational power:
 		- By removing the replicated data and replacing it with references to a single copy  of each bit of data we build a "web" of ibnformation that the relatinal database can read through very quickly- even for very large amounts of data.
 		- Often when you want some data it comes from a number of tables linked by foreign keys.
-		
 
+	The JOIN operation:
+		- links across several tables as part of a select operation
+		- you need to tell the JOIN how to use the keys that makes the connection between tables using an ON clause
+
+	ON clause = 
+	example: select Albun.title, Artist.name from Album join Artist on Album.artist_id = Artist.id
 	
 
 
