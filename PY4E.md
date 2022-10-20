@@ -656,6 +656,7 @@ UPDATE Users SET name="Charles" WHERE email='csev@umich.edu'
 SELECT * FROM Users
 SELECT * FROM Users WHERE email='csev@umich.edu'
 SELECT * FROM Users ORDER BY email
+DELETE FROM users WHERE email = "" OR name = ""
 
 remember CRUD!
 
@@ -680,8 +681,61 @@ For each piece of info...
 		- Do not replicate data
 		- Use integers for keys and references
 	
-	Integer reference pattern:
-		-
+_2022-10-20_
+
+myfirstdatabasehehe.db 
+
+INSERT INTO music (songs, artist, album) VALUES ('You calling my name', 'GOT7', 'Call my name');
+INSERT INTO music (songs, artist, album) VALUES ('Universe', 'EXO', 'Winter album: My universe');
+INSERT INTO music (songs, artist, album) VALUES ('Love Shot','EXO','LS');
+INSERT INTO music (songs, artist, album) VALUES ('doll','shrimp','dolly');
+INSERT INTO music (songs, artist, album) VALUES ('no way!','shrimp 2.0','aquarium');
+UPDATE music SET artist='yot club' WHERE songs='no way!'
+INSERT INTO music (songs, artist, album) VALUES ('New person, same old mistakes','Tame Impala','Currents');
+INSERT INTO music (songs, artist, album) VALUES ('The perfect girl','Maraux','TPG');
+INSERT INTO music (songs, artist, album) VALUES ('Obsession','EXO','O1');
+SELECT * FROM music WHERE artist='EXO' ;
+SELECT * FROM music ORDER BY album DESC ;
+DELETE FROM music WHERE artist = "" OR album = "" OR songs = ""
+	
+Key = A field or a combination of fields in a database table used to retrieve and/or sort rows based on certain attributes or requirements.
+
+	We use three kind of keys:															Albums
+		- Primary key = Generally an integer auto-incremented field						id
+		- Logical key = what the outside world uses for lookup							title
+		- Forgein key = Generally an integer key pointing to a row in another table		artist_id
+
+	Key rules:
+		- Never use your logical key as the primary key	
+		- Logical keys can and do change, albeit slowly	
+		- Relationships that are based on matching string
+		fields are less effecient than integers	
+
+		example:
+		User  		table
+		id  		primary key
+		login 	 	logical key
+		password
+		name
+		email
+		created_at
+		modified_at
+		login_at
+
+	More about foreign keys:
+		A foreign key is when a table has a column that contains a key which points to the primary key of another table. When all primary keys are integers, then all foreign keys are integers - this is good.
+
+		artist - id - name
+		-> artist_id - id - title 
+
+( view py4epics folder on lappy for a picture that should help! )
+
+	Relational power:
+		- By removing the replicated data and replacing it with references to a single copy  of each bit of data we build a "web" of ibnformation that the relatinal database can read through very quickly- even for very large amounts of data.
+		- Often when you want some data it comes from a number of tables linked by foreign keys.
+		
+
+	
 
 
 
