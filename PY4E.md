@@ -812,7 +812,7 @@ Summary:
 	- Relational databases allow us to scale to very large amounts of data
 	- The key is to have one copy of any data element and use relations and joints to link the data to multiple places
 	- This greatly reduces the amount of data which much be scaned when doing complex operations  across large amounts of data
-	- Database and SQL design is a bit of an rt form
+	- Database and SQL design is a bit of an art form
 	
 
 
