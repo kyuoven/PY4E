@@ -738,8 +738,81 @@ Key = A field or a combination of fields in a database table used to retrieve an
 		- links across several tables as part of a select operation
 		- you need to tell the JOIN how to use the keys that makes the connection between tables using an ON clause
 
-	ON clause = 
+			Here is a visual representation of JOIN in SQL:
+			https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+
+	ON clause = Only used with the JOIN operation
+	select table.field from Album join Artist on Album.artist_id = Artist.id
 	example: select Albun.title, Artist.name from Album join Artist on Album.artist_id = Artist.id
+ 
+_2022-10-28_
+
+How are we bringing this data together? only the compooter needs to worry about that :3
+
+
+Many-to-Many relationships = One book has many authors.
+
+So far what we did was with One-to-Many relationships,
+One-to-Many relationships = Many tracks associated with one album, many albums associated with one artist.
+
+	- Sometimes we need to model a relationship that is many-to-many.
+	- We need to add a connection table with two foreign keys.
+	- There is usually no seperate primary key.
+
+	Connector table:
+		- Allows us to break a many-to-many relationship into a table (look at picture folder!!) 
+		- Wikipedia calls it a JUnction table
+	
+An example of SQL connector table usage:
+
+	CREATE TABLE User (
+		id		INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+		name 	TEXT UNIQUE
+		email 	TEXT
+	) ;
+
+	CREATE TABLE Course (
+		id 		INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+		title	TEXT UNIQUE
+	) ;
+
+	CREATE TABLE Member (
+		user_id		INTEGER	,
+		course_id	INTEGER,
+			role		INTEGER,
+		PRIMARY KEY (user_id, course_id)
+	) ;
+	
+	INSERT INTO Member (user_id, course_id, role) VALUES (1,1,1) ;
+	INSERT INTO Member (user_id, course_id, role) VALUES (2,1,0) ;
+	INSERT INTO Member (user_id, course_id, role) VALUES (3,1,0) ;
+
+	INSERT INTO Member (user_id, course_id, role) VALUES (1,2,0) ;
+	INSERT INTO Member (user_id, course_id, role) VALUES (2,2,1) ;
+
+	INSERT INTO Member (user_id, course_id, role) VALUES (2,3,1) ;
+	INSERT INTO Member (user_id, course_id, role) VALUES (3,3,0) ;
+
+	SELECT User.name, Member.role, Course.title 
+	FROM User JOIN Member JOIN Course
+	ON Member.user_id = User.id AND
+	Member.course_id = Course.id 
+
+- Complexity makes speed possible and allows you top gte very fast results as the data size grows.
+- By normalizing the data and linking it with integer keys, the overall amount of data which the relational databases must scan is 
+far lower than if the data were simply flattened out.
+- It might seem lik a tradeoff - spend some time designing your database so it continues to be fast when your application is a success.
+
+Additional SQL topics:
+	- Indexes improve acces performance for things like string fields
+	- Constraints on data 
+	- Transactions allow SQL operations to be grouped and done as a unit
+
+Summary: 
+	- Relational databases allow us to scale to very large amounts of data
+	- The key is to have one copy of any data element and use relations and joints to link the data to multiple places
+	- This greatly reduces the amount of data which much be scaned when doing complex operations  across large amounts of data
+	- Database and SQL design is a bit of an rt form
 	
 
 
