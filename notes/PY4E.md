@@ -2,11 +2,11 @@ _2022-08-26_
 
 **Chapter one: Why program?**
 
-==Why computers?==
+*Why computers?*
 - They do stuff for us
 - We need to learn their language to be able to tell them what to do
 
-==Major computer parts:==
+*Major computer parts:*
 - CPU (Central Processing Unit) = The closest thing to a 'brain', "What do you want me to do next?".
 -  Main memory = The instructions get stored in here, the CPU gets the instructions from here. This is where your programs end up. Really fast, but when the power is off it doesn't do anything.
 - Secondary memory =(Slower large permanent storage) It stores the items within the Main memory when the power is off. After the computer is turned on they are loaded onto the Main memory, and the CPU takes the data from it and runs it. 
@@ -867,7 +867,6 @@ The Web crawling/spidering policy:
 	- a ==re-visit policy== that states when to check for changes 
 	- a ==politeness policy== that states how to avoid overloading web sites
 	- a ==parallelization policy== that states how to coordinate distributed web crawlers
-
 
 Robots.txt
 	- A way for a web site to communicate with web crawlers
