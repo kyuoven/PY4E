@@ -842,6 +842,51 @@ _2022-10-30_
 	- Caches the data in a database to avoid rate limiting and allow restarts
 	- Visualized in a browser using the Google maps API
 
+Part two: VISUALIZATION
+
+	Page rank:
+		- Write a simple web crawler
+		- Compute a simple version of Google's page rank algorithm
+		- Visualize the resulting network
+	
+	Search engine architecture:
+		- web crawling
+		- index building
+		- searching
+
+What is a web crawler/spider?
+	It's a program that browses the web in a methodical, automated manner. They are mainly used to keep a copy of all visited pages for later processing by a search engine that indexes the downloaded pages to provide fast searches.
+
+	- Retrieve a page
+	- Look through the page for links
+	- Add the links to a list of to be retrieved sites
+	- Repeat
+
+The Web crawling/spidering policy: 
+	- a ==selection policy== that states which pages to download
+	- a ==re-visit policy== that states when to check for changes 
+	- a ==politeness policy== that states how to avoid overloading web sites
+	- a ==parallelization policy== that states how to coordinate distributed web crawlers
+
+
+Robots.txt
+	- A way for a web site to communicate with web crawlers
+	- An informal and voluntary standard
+	- Sometimes folks make a spider trap to catch bad spiders.
+
+	User-agent:*
+	Disallow: /images/
+	Disallow: /tmp/
+	Disallow: /cgi-bin/
+
+Search indexing:
+	It collects, parses, and stores data to facilitate fast and accurate information retrieval. The purpose of storing an index is to optimize speed and performance in finding relecant documents for a search query. Without an index, the engine would scan every document in the corpus, which would require considerable time and computing power.
+
+html is NULL = page has not been retrieved
+
+Part 3: VISUALIZATION GMANE (EMAIL)
+
+
 
 
 
