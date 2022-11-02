@@ -900,7 +900,7 @@ What/Who is Gmane?
 
 	For this part of the book I am using an alternative given by my teacher, since the gmane.org website is just too slow. Gmane.org keeps all its messages etc on the site, with a number of 129.529.482 messages archived and 20.070 mailing lists as of 2012 only, it's safe to say the site has a lot on it's hands.
 
-
+that was it!
 
 
 
