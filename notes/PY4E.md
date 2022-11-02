@@ -885,6 +885,22 @@ html is NULL = page has not been retrieved
 
 Part 3: VISUALIZATION GMANE (EMAIL)
 
+_2022-11-02_
+
+Mailing list - Gmane
+
+	- Crawl the archive of a mailing list
+	- Do some analysis / cleanup
+	- Visualize the data as a word cloud and lines
+
+What/Who is Gmane?
+	(pronounced mane)
+	It's an e-mail to news gateway.
+	It allows people to access emails as if they were usenet newsgroups, through a variety of web interfaces.
+
+	For this part of the book I am using an alternative given by my teacher, since the gmane.org website is just too slow. Gmane.org keeps all its messages etc on the site, with a number of 129.529.482 messages archived and 20.070 mailing lists as of 2012 only, it's safe to say the site has a lot on it's hands.
+
+
 
 
 
